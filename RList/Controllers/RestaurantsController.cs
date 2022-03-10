@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace Rlist.Controllers
+namespace RList.Controllers
 {
   public class RestaurantsController : Controller
   {

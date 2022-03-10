@@ -39,6 +39,7 @@ namespace RList
         routes.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
       });
       app.UseStaticFiles();
+      app.UseCors();
       app.Run(async (context) =>
       {
         await context.Response.WriteAsync("Hello World");

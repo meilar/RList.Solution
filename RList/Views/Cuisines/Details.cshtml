@@ -1,0 +1,11 @@
+@{
+  Layout = "_Layout";
+}
+
+@model RList.Models.Cuisine;
+
+<h2>Cuisine Details</h2>
+
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<p>@Html.ActionLink("Delete category", "Delete", new { id = Model.CuisineId })</p>
+<p>@Html.ActionLink("Back to cuisine list", "Index")</p>
