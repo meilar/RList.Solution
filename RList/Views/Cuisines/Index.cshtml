@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+
+@using RList.Models;
+
+<h1>Cuisines</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No restaurants have been added ...yet! Please add a cuisine</h3>
+  <p>@Html.ActionLink("Add cuisine", "Create", "Cuisines")</p>
+}
+
+<ul>
+  @foreach (Restaurant restaurant in Model)
+  {
+    <li>@Html.ActionLink($"{restaurant.Name}", "Details", new { id = restaurant.RestaurantId })</li>
+  }
+  

@@ -8,7 +8,7 @@ namespace RList.Models
     public string Name { get; set; }
     public virtual ICollection<Restaurant> Restaurants { get; set; }
 
-    public Cuisine(string cuisineName)
+    public Cuisine()
     {
       Restaurants = new HashSet<Restaurant>();
     }
